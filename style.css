@@ -1,0 +1,191 @@
+/* General Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F7F6;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2563EB;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    width: 89.4%;
+    height: 70px;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.header-logo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #F4F7F6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #F59E0B;
+}
+
+/* Login Button */
+.login-btn {
+    text-decoration: none;
+    background-color: #F59E0B;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #D97706;
+}
+
+/* Burger Icon for Mobile */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* Hero Section */
+.section {
+    background-size: contain;
+    padding: 50px;
+    text-align: center;
+    color: Yellow;
+    border-radius: 10px;
+    /* min-height: 450px; */
+    height: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section h1 {
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    padding: 0 10px;
+}
+
+.section-header {
+    text-align: center;
+    font-size: 2rem;
+    color: #1D4ED8;
+    margin: 50px 0 20px;
+}
+
+/* Body-section */
+.center-text {
+    text-align: center;
+    font-size: 24px;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    .header-logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header-logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .section h1 {
+        visibility: hidden; /* Makes the h1 invisible but keeps its space */
+        height: 0; /* Removes height contribution from the h1 */
+        margin: 0; /* Removes margin contribution from the h1 */
+        padding: 0; /* Removes padding contribution from the h1 */
+    }
+
+    .section {
+        background-size: contain; /* Ensures the full image is shown without cropping */
+        padding: 30px;
+        min-height: auto; /* Adjusts height dynamically based on content */
+        margin-top: 20px;
+    }
+}

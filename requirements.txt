@@ -1,0 +1,15 @@
+streamlit
+requests
+beautifulsoup4
+langchain
+langchain-google-genai
+langchain-groq
+langchain-core
+scikit-learn
+numpy
+python-dotenv
+boilerpy3
+pytesseract
+pillow
+plotly
+pandas
