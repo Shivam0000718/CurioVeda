@@ -1,5 +1,4 @@
-# CurioVeda
-# CurioVeda
+# CurioVeda - RAG based AI Chatbot
 
 CurioVeda is an AI-powered web scraping and question-answering tool. This application allows users to input a website's URL, scrape the data present on the HTML page, and query the content using an intuitive interface. Built using Python and Flask, CurioVeda showcases the potential of combining web scraping and natural language processing (NLP) to enhance content accessibility and usability.
 
